@@ -13,117 +13,155 @@
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
         />
-        <title>Portelles Resume</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <title>Hello, I'm Bryan!</title>
     </head>
     <body>
         <div id="parent">
+            
             <div id="sidebar">
-                <iframe
-                    id="gif"
-                    src="https://giphy.com/embed/ao9DUiTKH60XS"
-                    width="200"
-                    height="200"
-                    frameborder="0"
-                    class="giphy-embed"
-                    allowfullscreen
-                ></iframe>
-                <p>
-                    <a
-                        href="https://giphy.com/stickers/90s-pixel-pixels-ao9DUiTKH60XS"
-                    ></a>
-                </p>
+                <img src="./terminal.gif" id = "computerImage">
+
+                <div id="pagePositionIndicator">
+
+                </div>
+
                 <div id="buttonGroup">
                     <button class="scroller" id="scrollToAboutMe">
                         About Me
                     </button>
+                    <button class="scroller" id="scrollToDegree">Degree</button>
                     <button class="scroller" id="scrollToProjects">
                         Projects
                     </button>
-                    <button class="scroller" id="scrollToSkills">Skills</button>
                     <button class="scroller" id="scrollToWork">Work</button>
-                    <button class="scroller" id="scrollToDegree">Degree</button>
+                    <button class="scroller" id="scrollToSkills">Skills</button>
                 </div>
             </div>
             <div id="middlebar">
                 <div id="mainheader">
-                    <h1 id="name">Hello, <br />I'm Bryan!</h1>
-                    <div id="blinker"></div>
+                    <div id="nameEncapsulator">
+                        <h1 class="name">Hello,</h1>
+                        <div id="nameAndCursor">
+                            <h1 id="cursorIndicator" class="name">I'm Bryan!</h1>
+                            <div id="blinker"></div>
+                        </div>
+                    </div>
                     <p id="aboutme">
-                        I am into all things STEM, and Computer Science is my
-                        major. I've been programming since I was young and I
-                        have a passion for creating solutions to real life
-                        problems.
+                        I write code, complain when it doesnt work, and willingly do the whole thing again!
+                        <br/>
+                        <br/>
+                        <br/>
+                            {
+                            <br/>
+                            "Contact": {
+                            <br/>
+                              "Phone": "786-385-6884",
+                            <br/>
+                              "eMail": "bryanportelles27@gmail.com",
+                              <br/>
+                              "GitHub": "bportelles"
+                              <br/>
+                            }
+                            <br/>
+                        }
                     </p>
                 </div>
 
-                <h2>CS Degree & Info</h2>
+                <div class = "headerWithIcon" id = "schoolingHeaderWithIcon">
+                    <h2 class="sectionTitle">CS Degree & Info</h2>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M384 96V320H64L64 96H384zM64 32C28.7 32 0 60.7 0 96V320c0 35.3 28.7 64 64 64H181.3l-10.7 32H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H277.3l-10.7-32H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm464 0c-26.5 0-48 21.5-48 48V432c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H528zm16 64h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg>
+                </div>
                 <div class="headerUnderline"></div>
                 <div id="schooling">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Atque voluptatum autem eligendi incidunt, sequi
-                        alias excepturi recusandae aperiam sapiente animi!
-                        <br /><br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis autem dicta nesciunt a maiores voluptatibus
-                        saepe natus dolores aperiam praesentium iure,
-                        reprehenderit deleniti pariatur delectus ex voluptates
-                        odit repellendus sint, illum fugit perspiciatis.
+                        - FIU, Masters in Computer Science (2026 - 2029)
                     </p>
                 </div>
 
-                <h2>Projects</h2>
+
+                <div class = "headerWithIcon" id = "projectsHeaderWithIcon">
+                    <h2 class="sectionTitle">Projects</h2>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg>
+                </div>
                 <div class="headerUnderline"></div>
                 <div id="projects">
                     <div id="projectSectionContainer">
                         <div class="project">
                             <img
                                 class="projectImage"
-                                src="https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"
+                                src="https://static-00.iconduck.com/assets.00/jquery-original-icon-256x247-abkbtq8l.png"
                             />
                             <div id="projectDescription">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quae, a.
+                                    jQuery Resume Page
                                 </p>
                             </div>
                         </div>
                         <div class="project">
                             <img
                                 class="projectImage"
-                                src="https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"
+                                src="https://flyclipart.com/thumb2/java-png-icon-free-download-892729.png"
                             />
                             <div class="projectDescription">
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Debitis, ratione?
+                                    A chat application using Java 
                                 </p>
                             </div>
                         </div>
                         <div class="project">
                             <img
                                 class="projectImage"
-                                src="https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"
+                                src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png"
                             />
                             <div class="projectDescription">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Illum, sed?
+                                    TensorFlow model using MNIST Fashion set to analyze images
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div id="projectIdeas">
                         <p id="projectFiller">
-                            Projects are some of my favorite ways to solidify
-                            technologies and the many things that come with
-                            them. I find myself doing small / medium projects,
-                            and really only keeping the notable ones.
+                            Projects help solidify technologies I like to use, help keep programming fundamentals sharp, and further my problem solving skills
                         </p>
                     </div>
                 </div>
 
-                <h2>Skills & Technologies</h2>
+                <div class = "headerWithIcon" id = "experienceHeaderWithIcon">
+                    <h2 class = "sectionTitle">Work Experience</h2>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18 11c1.49 0 2.87.47 4 1.26V8c0-1.11-.89-2-2-2h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h7.68A6.995 6.995 0 0 1 18 11zm-8-7h4v2h-4V4z"></path><path d="M18 13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm1.65 7.35L17.5 18.2V15h1v2.79l1.85 1.85-.7.71z"></path></svg>
+                </div>
+                <div class="headerUnderline"></div>
+                <div id="experience">
+                    <ul>
+                        <li>
+                            <p>
+                                Facebook - Junior Developer (2029 - 2031) <br /> Helped develop some structural site things, changing order of elements around and adding some functionality
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Amazon - Junior API Developer (2031 - 2034) <br /> Optimized calls to reduce cost, bandwith use, and time
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Netflix - Senior Developer (2035 - 2039)<br /> Helped oversee projects and integrate new features into systems
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Google - Senior Database Administrator (2040 - 2045) <br /> Created way to interface with database, helped optimize database calls for services
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class = "headerWithIcon" id = "skillsHeaderWithIcon">
+                    <h2 class = "sectionTitle">Skills & Technologies</h2>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"></path></svg>
+                </div>
                 <div class="headerUnderline"></div>
                 <div id="skills">
 
@@ -181,42 +219,6 @@
                         </p>
                     </div>
                 </div>
-
-                <h2>Work Experience</h2>
-                <div class="headerUnderline"></div>
-                <div id="experience">
-                    <ul>
-                        <li>
-                            <p>
-                                Facebook - Junior Developer<br />Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit.
-                                Labore, ratione.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Amazon - Junior API Developer<br />Lorem ipsum
-                                dolor, sit amet consectetur adipisicing elit.
-                                Sit, dolor.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Netflix - Senior Developer<br />Lorem ipsum
-                                dolor sit amet consectetur, adipisicing elit.
-                                Rerum, vitae.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Google - Senior Database Administrator<br />Lorem
-                                ipsum dolor sit, amet consectetur adipisicing
-                                elit. Explicabo, modi.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                
                 
             </div>
         </div>
